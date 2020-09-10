@@ -13,7 +13,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'unicafe.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'unicafetz.herokuapp.com']
 
 
 # Application definition
