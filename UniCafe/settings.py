@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env.SECRET_KEY
 
 
-DEBUG = True
+DEBUG = env.DEBUG
 
 ALLOWED_HOSTS = ['127.0.0.1', 'unicafetz.herokuapp.com']
 
