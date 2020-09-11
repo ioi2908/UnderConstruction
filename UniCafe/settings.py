@@ -2,17 +2,15 @@ import os
 from pathlib import Path
 from decouple import config
 import dj_database_url
-import django_heroku
-import env
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = env.SECRET_KEY
+SECRET_KEY = 'ze-#63g16sxo=28=j82%7@%$5)^vn$_d@6qk-ul!u(9io%b&sv'
 
-
-DEBUG = env.DEBUG
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'unicafetz.herokuapp.com']
 
@@ -125,4 +123,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
-django_heroku.settings(locals())
