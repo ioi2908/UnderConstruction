@@ -2,13 +2,14 @@ import os
 from pathlib import Path
 from decouple import config
 import dj_database_url
+from decouple import config
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = 'ze-#63g16sxo=28=j82%7@%$5)^vn$_d@6qk-ul!u(9io%b&sv'
+SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = True
 
@@ -25,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    # created apps
     
     'under_construction_app'
 ]
