@@ -5,8 +5,10 @@ from django.contrib import messages
 def email_notify(request):
     if request.method == 'POST':
         email = request.POST.get('email')
+        comment = request.POST.get('comment')
         object_email = EmailNotify()
         object_email.email = email
+        object_email.comment = comment
         if not '.com' in email:
             messages.error(request, 'Andika email yako kwa usahihi!')
             
