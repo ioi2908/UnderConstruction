@@ -3,14 +3,14 @@ from pathlib import Path
 from decouple import config
 import dj_database_url
 from decouple import config
+# from env import DJANGO_SECRET_KEY
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = config('SECRET_KEY')
-
+SECRET_KEY =  'ze-#63g16sxo=28=j82%7@%$5)^vn$_d@6qk-ul!u(9io%b&sv'
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'unicafetz.herokuapp.com']
